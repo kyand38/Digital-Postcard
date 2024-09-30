@@ -1,0 +1,31 @@
+.container{
+    border: solid;
+    border-radius: 5px;
+    border-color: black;
+    padding: 10px;
+    display: flex;
+
+}
+label{
+    display: block;
+}
+button{
+    display: block;
+}
+input{
+    display: flex;
+    flex-grow: -1;
+}
+section{
+    flex: 2 1 50%;
+    flex-direction: column;
+
+}
+img{
+    display: inline;
+    max-width: 90%;
+    height: auto;
+}
+main{
+    display: flex;
+}
