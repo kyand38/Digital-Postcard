@@ -1,5 +1,9 @@
 h1{
     color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    background-color:black;
+
 }
 body{
     background-image: url(mountains.jpg);
@@ -40,5 +44,8 @@ img{
 }
 main{
     display: flex;
+}
+.authors{
+    color: rgb(255, 255, 255);
 }
 
