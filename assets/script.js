@@ -36,7 +36,10 @@ function validateForm() {
 
 submit.addEventListener('click', function (event) {
     event.preventDefault();
-    validateForm();
+ imageChange
+  validateForm();
+
+main
     const myData = {
         sent: sentEmail.value.trim(),
         myMail: myEmail.value.trim(),
@@ -67,10 +70,12 @@ function showData() {
 
 
 
+
 window.onload = showData();
 
 
 /* document.getElementById('mainImage').addEventListener('click', () => {
     document.getElementById('mainImage').animate(flip, 500);
 }); */
+
 

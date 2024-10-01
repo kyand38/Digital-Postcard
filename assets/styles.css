@@ -48,4 +48,21 @@ img {
 main {
     display: flex;
 }
+ul {
+    text-align: right;
+    list-style: none;
+}
 
+li {
+    display: inline;
+}
+
+.emaillogo {
+    width: 2%;
+}
+.github {
+    width: 2%;
+}
+.spotify {
+    width: 7%;
+}
