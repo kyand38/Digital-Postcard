@@ -17,6 +17,7 @@ body{
     color: rgb(255, 255, 255);
 
 }
+
 label{
     display: block;
 }
@@ -40,6 +41,4 @@ img{
 main{
     display: flex;
 }
-footer{
-    color: rgb(255, 255, 255);
-}
+
