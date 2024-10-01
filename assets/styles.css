@@ -1,18 +1,20 @@
-h1{
+h1 {
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px;
     background-color:black;
 
 }
-body{
+
+body {
     background-image: url(mountains.jpg);
     background-repeat: no repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
 }
-.container{
+
+.container {
     border: solid;
     border-radius: 5px;
     border-color: rgb(255, 255, 255);
@@ -22,30 +24,51 @@ body{
 
 }
 
-label{
+label {
     display: block;
 }
-button{
+
+button {
     display: block;
 }
-input{
+
+input {
     display: flex;
     flex-grow: -1;
 }
-section{
+
+section {
     flex: 2 1 50%;
     flex-direction: column;
 
 }
-img{
+
+img {
     display: inline;
     max-width: 90%;
     height: auto;
 }
-main{
+
+main {
     display: flex;
 }
-.authors{
-    color: rgb(255, 255, 255);
+
+ul {
+    text-align: right;
+    list-style: none;
 }
 
+li {
+    display: inline;
+
+}
+
+.emaillogo {
+    width: 2%;
+}
+.github {
+    width: 2%;
+}
+.spotify {
+    width: 7%;
+}
