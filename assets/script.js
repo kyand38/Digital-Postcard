@@ -13,6 +13,8 @@ const submit = document.querySelector('button');
 submit.addEventListener('click', function (event) {
     event.preventDefault();
 
+    validateForm();
+
     const myData = {
         sent: sentEmail.value.trim(),
         myMail: myEmail.value.trim(),
