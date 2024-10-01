@@ -36,10 +36,8 @@ function validateForm() {
 
 submit.addEventListener('click', function (event) {
     event.preventDefault();
- imageChange
   validateForm();
 
-main
     const myData = {
         sent: sentEmail.value.trim(),
         myMail: myEmail.value.trim(),
@@ -56,7 +54,7 @@ function showData() {
     const lastData = JSON.parse(localStorage.getItem('myData'));
 
     if (lastData !== null) {
-        const imgURL = myImage.value
+        const imgURL = lastData.img
         const newImage = document.createElement('img');
         newImage.src = imgURL;
         container.appendChild(newImage);
