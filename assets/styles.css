@@ -24,6 +24,9 @@ body {
 
 }
 
+#mainContainer {
+    min-height: 290px;
+}
 label {
     display: block;
 }
@@ -40,9 +43,11 @@ input {
 section {
     flex: 2 1 50%;
     flex-direction: column;
-
 }
-
+form {
+    flex-direction: column;
+    flex: 2 1 20%;
+}
 img {
     display: inline;
     max-width: 90%;
@@ -60,6 +65,12 @@ ul {
 
 li {
     display: inline;
+
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
 
 }
 
