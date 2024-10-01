@@ -1,9 +1,20 @@
+h1{
+    color: rgb(255, 255, 255);
+}
+body{
+    background-image: url(mountains.jpg);
+    background-repeat: no repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .container{
     border: solid;
     border-radius: 5px;
-    border-color: black;
+    border-color: rgb(255, 255, 255);
     padding: 10px;
     display: flex;
+    color: rgb(255, 255, 255);
 
 }
 label{
@@ -28,4 +39,7 @@ img{
 }
 main{
     display: flex;
+}
+footer{
+    color: rgb(255, 255, 255);
 }
