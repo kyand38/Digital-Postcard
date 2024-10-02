@@ -95,7 +95,7 @@ window.onload = showData();
     document.getElementById('mainImage').animate(flip, 500);
 }); */
 
-/*function notifyNewTraveler(trip) {
+/*function sendPostcard(onward) {
     const templateParams = {
        to_name: trip.traveler.name,
        to_email: trip.traveler.email,
