@@ -51,7 +51,7 @@
 
 
         <form class="container">
-
+            <h2>Design your postcard</h2>
             <label for="content"></label>
             <textarea id="content" placeholder="Enter text"></textarea>
 
@@ -69,11 +69,19 @@
         </section>
         <p></p>
         <form class="container" id="contact-form">
-        <label for="emailto" name="user_email"></label>
+        <h2>Send your postcard</h2>
+        <label for="name" name="user_name"></label>
+        <input type="text" id="name" placeholder="To name: ">
+
+        <label for="emailto" name="emailto"></label>
         <input type="email" id="emailto" placeholder="Email to: ">
 
-        <label for="emailfrom" name=""></label>
+        <label for="from" name="from_name""></label>
+        <input type="text" id="from" placeholder="From name: ">
+
+        <label for="emailfrom" name="emailfrom"></label>
         <input type="email" id="emailfrom" placeholder="Email from: ">
+
         <button type="submit" id="send">Send</button>
         </form>
     </main>
