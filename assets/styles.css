@@ -2,12 +2,14 @@ h1 {
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px;
-    background-color:black;
+    background-color: black;
 }
-.p1{
+
+.p1 {
     color: rgb(255, 255, 255);
     text-align: center;
 }
+
 body {
     background-image: url(mountains.jpg);
     background-repeat: no repeat;
@@ -29,9 +31,40 @@ body {
 #mainContainer {
     min-height: 290px;
 }
+
+#container2 {
+    margin: 0 auto;
+    height: 500px;
+    width: 700px;
+    position: relative;
+}
+
+#mainSpan {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    word-wrap: break-word;
+    width: 275px;
+    height: 400px;
+    font-size: 24px;
+    padding: 5px;
+    text-decoration: underline;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+
 label {
     display: block;
 }
+
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+
 
 button {
     background-color: hsl(0, 0%, 100%);
@@ -39,7 +72,7 @@ button {
     padding: 5px;
     height: auto;
     width: 25%;
-    float:left;
+    float: left;
     text-align: center;
     max-height: 15%;
     margin: 5px;
@@ -54,10 +87,12 @@ section {
     flex: 2 1 50%;
     flex-direction: column;
 }
+
 form {
     flex-direction: column;
     flex: 2 1 20%;
 }
+
 img {
     display: inline;
     max-width: 90%;
@@ -77,25 +112,28 @@ li {
     display: inline;
 
 }
+
 footer {
     position: fixed;
     bottom: 0;
     right: 0;
-    color:rgb(255, 255, 255)
-
+    color: rgb(255, 255, 255)
 }
-.f1{
+
+.f1 {
     text-align: center;
     margin-left: 220px;
-    margin-bottom: 50px;
+    margin-bottom: -25px;
 }
 
 .emaillogo {
     width: 2%;
 }
+
 .github {
     width: 2%;
 }
+
 .spotify {
     width: 7%;
 }
