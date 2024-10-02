@@ -107,10 +107,12 @@ function showData() {
 
 /* document.getElementById('mainImage').addEventListener('click', () => {
     document.getElementById('mainImage').animate(flip, 500);
+
     }); */
     
     function sendMail() {
     const templateParams = JSON.parse(localStorage.getItem('myData'));
+
  
     emailjs.send('service_81dabxj', 'template_xnnkp08', templateParams)
        .then(function(response) {
