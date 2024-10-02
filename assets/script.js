@@ -10,7 +10,7 @@ const form = document.querySelector('#contact-form');
 /* const canvas = document.createElement('canvas');
 const ctx = canvas.getContext('2d'); */
 const container = document.getElementById('mainContainer');
-
+const spanMain = document.getElementById('mainSpain');
 /*window.addEventListener('load', function() {
     emailjs.init("tSaq7COCltqEYR-7C");
 });
@@ -19,16 +19,18 @@ const container = document.getElementById('mainContainer');
     { transform: "rotateY(180deg)" },
   ]; */
 
-/* const image = new Image();
-image.onload = () => {
-    canvas.width = '43.75em';
-    canvas.height = '31.25em';
-    ctx.drawImage(image, 0, 0);
-    ctx.font = '30px Arial';
-    ctx.fillStyle = 'white';
-    ctx.fillText(text, 10, 50); 
-    document.getElementById('mainContainer').appendChild(canvas);
-}; */
+const newImage = new Image();
+const canvas = document.querySelector('canvas');
+const ctx = canvas.getContext('2d');
+canvas.width = 700;
+canvas.height = 500;
+
+
+newImage.onload = function() {
+    ctx.drawImage(newImage, 0, 0, canvas.width, canvas.height)
+    newImage.src = myImage.value;
+};
+
 
 
 
@@ -62,7 +64,7 @@ preview.addEventListener('click', function (event) {
         text: content.value.trim(),
         img: myImage.value.trim(),
     };
-    localStorage.setItem('myData', JSON.stringify(myData));
+    localStorage.setItem('newData', JSON.stringify(myData));
     location.reload();
 
 });
@@ -86,17 +88,13 @@ send.addEventListener('click', function (event) {
 });
 
 function showData() {
-    const lastData = JSON.parse(localStorage.getItem('myData'));
+    const lastData = JSON.parse(localStorage.getItem('newData'));
 
     if (lastData !== null) {
         const imgURL = lastData.img
-        const newImage = document.createElement('img');
         newImage.src = imgURL;
-        container.appendChild(newImage);
-        // document.querySelector('.placeholder').textContent = lastData.sent;
-        // document.querySelector('.placeholder2').textContent = lastData.myMail;
-        // document.querySelector('.placeholder3').textContent = lastData.text;
-        // document.getElementById('mainContainer').firstChild.src = lastData.img
+        
+        
 
     }
 };
@@ -104,7 +102,7 @@ function showData() {
 
 
 
-//window.onload = showData();
+window.onload = showData();
 
 
 /* document.getElementById('mainImage').addEventListener('click', () => {
