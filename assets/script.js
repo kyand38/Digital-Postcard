@@ -2,7 +2,8 @@ const sentEmail = document.querySelector('#emailto');
 const myEmail = document.querySelector('#emailfrom');
 const content = document.querySelector('#content');
 const myImage = document.querySelector('#image');
-const submit = document.querySelector('button');
+const preview = document.querySelector('#preview');
+const send = document.querySelector('#send');
 /* const canvas = document.createElement('canvas');
 const ctx = canvas.getContext('2d'); */
 const container = document.getElementById('mainContainer');
@@ -26,7 +27,7 @@ function validateForm() {
     const sentEmail = document.querySelector('#emailto');
     const myEmail = document.querySelector('#emailfrom');
     const content = document.querySelector('#content');
-    const myImage = document.querySelector('#image');    
+    const myImage = document.querySelector('#image');
     if (sentEmail.value.trim() === "" || myEmail.value.trim() === "" || content.value.trim() === "" || myImage.value.trim() === "") {
         alert("Please fill in the all of the info.");
         return false; // Prevent form submission
@@ -34,9 +35,9 @@ function validateForm() {
     return true;
 };
 
-submit.addEventListener('click', function (event) {
+preview.addEventListener('click', function (event) {
     event.preventDefault();
-  validateForm();
+    validateForm();
 
     const myData = {
         sent: sentEmail.value.trim(),
@@ -62,7 +63,7 @@ function showData() {
         // document.querySelector('.placeholder2').textContent = lastData.myMail;
         // document.querySelector('.placeholder3').textContent = lastData.text;
         // document.getElementById('mainContainer').firstChild.src = lastData.img
-        
+
     }
 };
 
@@ -75,5 +76,3 @@ window.onload = showData();
 /* document.getElementById('mainImage').addEventListener('click', () => {
     document.getElementById('mainImage').animate(flip, 500);
 }); */
-
-
