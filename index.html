@@ -15,30 +15,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script defer src="./assets/script.js"></script>
-    <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init({
-                publicKey: "tSaq7COCltqEYR-7C",
-            });
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function () {
-            document.getElementById('contact-form').addEventListener('submit', function (event) {
-                event.preventDefault();
-                // these IDs from the previous steps
-                emailjs.sendForm('service_81dabxj', 'template_ycstakj', )
-                    .then(() => {
-                        console.log('SUCCESS!');
-                    }, (error) => {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
     <title>Digital Postcard</title>
 </head>
 <header>
@@ -51,7 +29,7 @@
 
 
         <form class="container">
-
+            <h2>Design your postcard</h2>
             <label for="content"></label>
             <textarea id="content" placeholder="Enter text"></textarea>
 
@@ -67,14 +45,23 @@
 
             </div>
         </section>
-        <p></p>
-        <form class="container" id="contact-form">
-        <label for="emailto" name="user_email"></label>
-        <input type="email" id="emailto" placeholder="Email to: ">
+        <form class="container" id="contact-form" name="contact-form">
+            <label for="emailto" name="user_email"></label>
+            <h2>Send your postcard</h2>
+            <label for="name" name="to_name"></label>
+            <input type="text" id="name" placeholder="To name: ">
 
-        <label for="emailfrom" name=""></label>
-        <input type="email" id="emailfrom" placeholder="Email from: ">
-        <button type="submit" id="send">Send</button>
+            <label for="emailto" name="emailto"></label>
+            <input type="email" id="emailto" placeholder="Email to: ">
+
+            <label for="emailfrom" name=""></label>
+            <label for="from" name="from_name""></label>
+            <input type=" text" id="from" placeholder="From name: ">
+
+                <label for="emailfrom" name="emailfrom"></label>
+                <input type="email" id="emailfrom" placeholder="Email from: ">
+
+                <button type="submit" id="send">Send</button>
         </form>
     </main>
     <footer>
