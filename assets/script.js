@@ -23,12 +23,21 @@ image.onload = () => {
     ctx.fillText(text, 10, 50); 
     document.getElementById('mainContainer').appendChild(canvas);
 }; */
-function validateForm() {
-    const sentEmail = document.querySelector('#emailto');
-    const myEmail = document.querySelector('#emailfrom');
+
+function validateForm1() {
     const content = document.querySelector('#content');
     const myImage = document.querySelector('#image');
-    if (sentEmail.value.trim() === "" || myEmail.value.trim() === "" || content.value.trim() === "" || myImage.value.trim() === "") {
+    if (content.value.trim() === "" || myImage.value.trim() === "") {
+        alert("Please fill in the all of the info.");
+        return false; // Prevent form submission
+    }    // Form is valid, continue with submission
+    return true;
+};
+
+function validateForm2() {
+    const sentEmail = document.querySelector('#emailto');
+    const myEmail = document.querySelector('#emailfrom');
+    if (sentEmail.value.trim() === "" || myEmail.value.trim() === "") {
         alert("Please fill in the all of the info.");
         return false; // Prevent form submission
     }    // Form is valid, continue with submission
@@ -37,19 +46,28 @@ function validateForm() {
 
 preview.addEventListener('click', function (event) {
     event.preventDefault();
-    validateForm();
+    validateForm1();
 
     const myData = {
-        sent: sentEmail.value.trim(),
-        myMail: myEmail.value.trim(),
         text: content.value.trim(),
         img: myImage.value.trim(),
     };
     localStorage.setItem('myData', JSON.stringify(myData));
+    location.reload(); 
 
 });
 
+send.addEventListener('click', function (event) {
+    event.preventDefault();
+    validateForm2();
 
+    const myData = {
+        sent: sentEmail.value.trim(),
+        myMail: myEmail.value.trim(),
+    };
+    localStorage.setItem('myData', JSON.stringify(myData));
+
+});
 
 function showData() {
     const lastData = JSON.parse(localStorage.getItem('myData'));
@@ -76,3 +94,19 @@ window.onload = showData();
 /* document.getElementById('mainImage').addEventListener('click', () => {
     document.getElementById('mainImage').animate(flip, 500);
 }); */
+
+/*function notifyNewTraveler(trip) {
+    const templateParams = {
+       to_name: trip.traveler.name,
+       to_email: trip.traveler.email,
+       from_name: trip.owner.name,
+       from_email: trip.owner.email,
+       trip_name: trip.name };
+ 
+    emailjs.send('service_sEcRet', 'template_sEcRet', templateParams)
+       .then(function(response) {
+          console.log('SUCCESS!', response.status, response.text);
+       }, function(error) {
+          console.log('FAILED...', error);
+       });
+ }*/
