@@ -101,6 +101,7 @@ img {
 
 main {
     display: flex;
+    flex-direction: row;
 }
 
 ul {
@@ -136,4 +137,13 @@ footer {
 
 .spotify {
     width: 7%;
+}
+@media screen and (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        position: relative;
+    }
 }
