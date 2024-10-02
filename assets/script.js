@@ -30,6 +30,8 @@ image.onload = () => {
     document.getElementById('mainContainer').appendChild(canvas);
 }; */
 
+
+
 function validateForm1() {
     const content = document.querySelector('#content');
     const myImage = document.querySelector('#image');
@@ -126,18 +128,3 @@ function showData() {
                 publicKey: "tSaq7COCltqEYR-7C",
             });
        
-    
- /*<script type="text/javascript">
-        window.onload = function () {
-            document.getElementById('contact-form').addEventListener('submit', function (event) {
-                event.preventDefault();
-                // these IDs from the previous steps
-                emailjs.sendForm('service_81dabxj', 'template_xnnkp08', '#contact-form')
-                    .then(() => {
-                        console.log('SUCCESS!');
-                    }, (error) => {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>*/
