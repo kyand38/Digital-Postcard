@@ -43,7 +43,7 @@
 </head>
 <header>
     <h1>Digital Postcard</h1>
-    <p>Share special moments, personalize your message, or just say hi to a loved one!</p>
+    <p class="p1">Share special moments, personalize your message, or just say hi to a loved one!</p>
 </header>
 
 <body>
@@ -51,6 +51,7 @@
 
 
         <form class="container">
+
             <label for="content"></label>
             <textarea id="content" placeholder="Enter text"></textarea>
 
@@ -58,6 +59,17 @@
             <input type="url" id="image" placeholder="Paste image link here: ">
 
             <button id="preview">Preview</button>
+
+            <label for="email" >Email to: </label>
+            <input type="email" id="emailto">
+            <label for="email">Email from: </label>
+            <input type="email" id="emailfrom">
+            <label for="content">Enter your message here: </label>
+            <textarea id="content"></textarea>
+            <label for="image">Paste image link here: </label>
+            <input type="url" id="image">
+            
+
         </form>
 
 
@@ -77,7 +89,7 @@
         </form>
     </main>
     <footer>
-        <p class="authors">Brought to you by Dimitri, Jayce, and Kyle</p>
+        <p class="f1">Brought to you by Dimitri, Jayce, and Kyle</p>
         <ul>
             <li><a href="https://gmail.com"><img class="emaillogo" src="assets\icons8-email-64.png"
                         alt="Email logo"></a></li>
