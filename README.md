@@ -12,17 +12,19 @@ Enter Text and an Image link then hit preview when you're ready. After you're ha
 
 ## Contributing
 
-Constructive criticism is welcome. Please contact us if issues arise
+Constructive criticism is welcome. Please contact us if issues arise.
 
 ## Contact
 
-Please contact kyand2024@gmail.com, Dimintri.lo@gmail.com, or jthor0516@gmail.com with any concerns
+Please contact kyand2024@gmail.com, Dimintri.lo@gmail.com, or jthor0516@gmail.com with any concerns.
 
 ## Authors
 
 Made by Kyle Anderson, Dimintri Lo, and Jayce Thoreson
-With the help of our instructors Rachel and Katy. Thanks
+with the help of our instructors Rachel and Katy. Thanks!
 
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+## Link for more information (https://docs.google.com/presentation/d/1Jw3FH2yrfIYU3XawmYIoJllG3SJtHeN8iuOg5dUQLzk/edit?usp=sharing)
