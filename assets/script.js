@@ -10,7 +10,7 @@ const form = document.querySelector('#contact-form');
 /* const canvas = document.createElement('canvas');
 const ctx = canvas.getContext('2d'); */
 const container = document.getElementById('mainContainer');
-const spanMain = document.getElementById('mainSpain');
+const spanMain = document.getElementById('mainSpan');
 /*window.addEventListener('load', function() {
     emailjs.init("tSaq7COCltqEYR-7C");
 });
@@ -92,8 +92,9 @@ function showData() {
 
     if (lastData !== null) {
         const imgURL = lastData.img
+        const lastText = lastData.text;
         newImage.src = imgURL;
-        
+        spanMain.textContent = lastText;
         
 
     }
