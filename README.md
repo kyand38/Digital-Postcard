@@ -21,6 +21,7 @@ Please contact kyand2024@gmail.com, Dimintri.lo@gmail.com, or jthor0516@gmail.co
 ## Authors
 
 Made by Kyle Anderson, Dimintri Lo, and Jayce Thoreson
+With the help of our instructors Rachel and Katy. Thanks
 
 ## License
 
