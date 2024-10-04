@@ -105,7 +105,6 @@ section {
 
 form {
     
-    background-color: black;
     flex-direction: column;
     flex: 2 1 20%;
 
@@ -172,5 +171,20 @@ footer {
         height: 357px;
         padding: 50px 0px 5px 200px;
         font-size: 16px;
+    }
+    .emaillogo {
+        width: 4%;
+    }
+    
+    .github {
+        width: 4%;
+    }
+    
+    .spotify {
+        width: 12%;
+    }
+    .f1 {
+        margin-right: 200px;
+        text-align: left;
     }
 }
