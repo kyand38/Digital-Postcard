@@ -23,6 +23,11 @@ Please contact kyand2024@gmail.com, Dimintri.lo@gmail.com, or jthor0516@gmail.co
 Made by Kyle Anderson, Dimintri Lo, and Jayce Thoreson
 with the help of our instructors Rachel and Katy. Thanks!
 
+## Resources
+
+https://www.emailjs.com/
+https://getbootstrap.com/
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
