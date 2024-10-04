@@ -58,6 +58,7 @@ body {
 #postcard {
     width: 700px; 
     height: 500px; 
+    background-size: 700px 500px;
     background-repeat: no-repeat; 
     color: white; 
     font-size: 20px; 
@@ -103,6 +104,8 @@ section {
 }
 
 form {
+    
+    background-color: black;
     flex-direction: column;
     flex: 2 1 20%;
 

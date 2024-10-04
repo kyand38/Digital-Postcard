@@ -67,9 +67,10 @@ preview.addEventListener('click', function (event) {
         img: myImage.value.trim(),
     };
     localStorage.setItem('newData', JSON.stringify(myData));
-    // location.reload();
     showData()
 
+    //location.reload();
+    
 });
 
 /*preview.addEventListener('click', function (event) {
